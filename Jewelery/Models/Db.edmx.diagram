@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="05686859aa5e42e387ac7c427894d858" Name="Diagram1">
+        <EntityTypeShape EntityType="Model1.AdImage" Width="1.5" PointX="9.75" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Ad" Width="1.5" PointX="7.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Category" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.CategoryLanguage" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.Language" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.MenuItemLanguage" Width="1.5" PointX="7.5" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.MenuItem" Width="1.5" PointX="5.25" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.SubCategory" Width="1.5" PointX="3" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.SubCategoryLanguage" Width="1.5" PointX="5.25" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.SubSubCategory" Width="1.5" PointX="5.25" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.SubSubCategoryLanguage" Width="1.5" PointX="7.5" PointY="19.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.User" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Model1.database_firewall_rules" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="Model1.FK_AdImages_Ads" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_Ads_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_Ads_MenuItems" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_Ads_SubCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_Ads_SubSubCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_Ads_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_CategoryLanguages_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_SubCategories_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_CategoryLanguages_Languages" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_MenuItemLanguages_Languages" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_SubCategoryLanguages_Languages" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_SubSubCategoryLanguages_Languages" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_MenuItemLanguages_MenuItems" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_SubCategoryLanguages_SubCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_SubSubCategories_SubCategories" ManuallyRouted="false" />
+        <AssociationConnector Association="Model1.FK_SubSubCategoryLanguages_SubSubCategies" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Model1.Wishlist" Width="1.5" PointX="9.75" PointY="10.625" />
+        <AssociationConnector Association="Model1.FK_Wishlist_Ads" />
+        <AssociationConnector Association="Model1.FK_Wishlist_Users" />
+        <EntityTypeShape EntityType="Model1.Message" Width="1.5" PointX="3.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
