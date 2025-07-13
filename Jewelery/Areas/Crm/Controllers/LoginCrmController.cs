@@ -24,10 +24,12 @@ namespace Jewelery.Areas.Crm.Controllers
                 //User user = db.Users.FirstOrDefault(u => u.Email == login.Email);
                 if (login.Email == "admin@gold.az")
                 {
-                    if (System.Web.Helpers.Crypto.VerifyHashedPassword("ABGaYZ/sdH0kOFCFbNnmlAva9HQMP+YrjVIor4ETjXl1uqpPS+KRvlVhVuywLjQVZw==", login.Password))
+                    if (System.Web.Helpers.Crypto.VerifyHashedPassword(
+                            "ABGaYZ/sdH0kOFCFbNnmlAva9HQMP+YrjVIor4ETjXl1uqpPS+KRvlVhVuywLjQVZw==", login.Password))
                     {
-                        Session["Admin"] = true;
-                        Session["Logged"] = true;
+                        //TODO Test olunmalidir.
+                        HttpContext.Session.GetString("Admin");
+                        HttpContext.Session.GetString("Logged");
                         return RedirectToAction("Index", "dashboard");
                     }
                 }
@@ -37,6 +39,7 @@ namespace Jewelery.Areas.Crm.Controllers
                     ModelState.AddModelError("Summary", "E-poçt və ya Şifrə yanlışdır");
                 }
             }
+
             return View(login);
         }
     }

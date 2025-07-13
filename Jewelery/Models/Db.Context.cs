@@ -12,41 +12,37 @@ using Microsoft.EntityFrameworkCore;
 namespace Jewelery.Models
 {
     using System;
-    // using System.Data.Entity;
-    // using System.Data.Entity.Infrastructure;
+
     
     public partial class JeweleryEntities : DbContext
     {
-        public JeweleryEntities()
-            : base("name=JeweleryEntities")
+        public class JeweleryDbContext : DbContext
         {
-        }
+            public JeweleryDbContext(DbContextOptions<JeweleryDbContext> options)
+                : base(options)
+            {
+            }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-        }
+            public DbSet<AdImage> AdImages { get; set; }
+            public DbSet<Ad> Ads { get; set; }
+            public DbSet<Category> Categories { get; set; }
+            public DbSet<CategoryLanguage> CategoryLanguages { get; set; }
+            public DbSet<Language> Languages { get; set; }
+            public DbSet<MenuItemLanguage> MenuItemLanguages { get; set; }
+            public DbSet<MenuItem> MenuItems { get; set; }
+            public DbSet<SubCategory> SubCategories { get; set; }
+            public DbSet<SubCategoryLanguage> SubCategoryLanguages { get; set; }
+            public DbSet<SubSubCategory> SubSubCategories { get; set; }
+            public DbSet<SubSubCategoryLanguage> SubSubCategoryLanguages { get; set; }
+            public DbSet<User> Users { get; set; }
+            public DbSet<database_firewall_rules> database_firewall_rules { get; set; }
+            public DbSet<Wishlist> Wishlists { get; set; }
+            public DbSet<Message> Messages { get; set; }
 
-        
-        // protected override void OnModelCreating(DbModelBuilder modelBuilder)
-        // {
-        //     throw new UnintentionalCodeFirstException();
-        // }
-    
-        public virtual DbSet<AdImage> AdImages { get; set; }
-        public virtual DbSet<Ad> Ads { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<CategoryLanguage> CategoryLanguages { get; set; }
-        public virtual DbSet<Language> Languages { get; set; }
-        public virtual DbSet<MenuItemLanguage> MenuItemLanguages { get; set; }
-        public virtual DbSet<MenuItem> MenuItems { get; set; }
-        public virtual DbSet<SubCategory> SubCategories { get; set; }
-        public virtual DbSet<SubCategoryLanguage> SubCategoryLanguages { get; set; }
-        public virtual DbSet<SubSubCategory> SubSubCategories { get; set; }
-        public virtual DbSet<SubSubCategoryLanguage> SubSubCategoryLanguages { get; set; }
-        public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<database_firewall_rules> database_firewall_rules { get; set; }
-        public virtual DbSet<Wishlist> Wishlists { get; set; }
-        public virtual DbSet<Message> Messages { get; set; }
+            protected override void OnModelCreating(ModelBuilder modelBuilder)
+            {
+                
+            }
+        }
     }
 }

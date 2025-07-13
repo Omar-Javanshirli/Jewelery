@@ -79,3 +79,39 @@ build_metadata.AdditionalFiles.TargetPath =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Ads/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0Fkcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0NhdGVnb3JpZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0NhdGVnb3JpZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Dashboard/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0Rhc2hib2FyZC9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0Rhc2hib2FyZC9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/LoginCrm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0xvZ2luQ3JtL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Messages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL01lc3NhZ2VzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL1NoYXJlZC9fTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL1VzZXJzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 

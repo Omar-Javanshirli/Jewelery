@@ -1,0 +1,463 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>GOLD - Control Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/Public/assets/images/smallgold.png">
+
+    <!-- App css -->
+    <link href="~/Public/crmassets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/crmassets/css/jquery-ui.min.css" rel="stylesheet">
+    <link href="~/Public/crmassets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/crmassets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/crmassets/css/app.min.css" rel="stylesheet" type="text/css" />
+
+    <!--Datatables-->
+    <link href="~/Public/crmassets/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Public/crmassets/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Public/crmassets/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!--Datatables-->
+</head>
+
+<body class="">
+
+    <!-- Left Sidenav -->
+    <div class="left-sidenav">
+        <!-- LOGO -->
+        <div class="leftbar-profile p-3 vw-100">
+            <div class="media position-relative">
+                <div class="leftbar-user online">
+                    <img src="~/Public/assets/images/smallgold.png" alt="" class="thumb-md rounded-circle">
+                </div>
+                <div class="media-body align-self-center text-truncate ml-3">
+                    <h5 class="mt-0 mb-1 font-weight-semibold">Gold.az</h5>
+                    <p class="text-uppercase mb-0 font-12">Admin</p>
+                </div><!--end media-body-->
+            </div>
+        </div>
+        <!--end logo-->
+     
+        <ul class="metismenu left-sidenav-menu slimscroll">
+            <li class="menu-label">Menyu</li>
+            <li class="leftbar-menu-item">
+                <a href="@Url.Action("index","dashboard", new {Area="crm" })" class="menu-link">
+                    <i data-feather="home" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Ana Səhifə</span>
+                </a>
+
+
+
+
+                <a href="@Url.Action("index","ads", new {Area="crm" })" class="menu-link">
+                    <i data-feather="globe" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Bütün Elanlar</span>
+                </a>
+
+
+
+                <a href="@Url.Action("index","messages", new {Area="crm" })" class="menu-link">
+                    <i data-feather="mail" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Mesajlar</span>
+                </a>
+
+
+
+                <a href="@Url.Action("index","users", new {Area="crm" })" class="menu-link">
+                    <i data-feather="hard-drive" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Müştəri Bazası</span>
+                </a>
+
+            </li>
+
+
+
+
+            <li class="menu-label">Tənzimləmələr</li>
+            <li class="leftbar-menu-item">
+                @*<a href="@Url.Action("index","categories", new {Area="crm" })" class="menu-link">
+                    <i data-feather="layers" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Kateqoriyalar</span>
+                </a>
+
+                <a href="#" class="menu-link">
+                    <i data-feather="grid" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Sub Kateqoriyalar</span>
+                </a>
+
+
+                <a href="#" class="menu-link">
+                    <i data-feather="list" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Sub-Sub Kateqoriyalar</span>
+                </a>*@
+
+
+
+                <a href="#" class="menu-link">
+                    <i data-feather="image" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Slayder</span>
+                </a>
+
+
+                <a href="#" class="menu-link">
+                    <i data-feather="printer" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>F.A.Q</span>
+                </a>
+
+                <a href="#" class="menu-link">
+                    <i data-feather="settings" class="align-self-center vertical-menu-icon icon-dual-vertical"></i>
+                    <span>Statik Məlumatlar</span>
+                </a>
+
+            </li>
+        </ul>
+
+    </div>
+    <!-- end left-sidenav-->
+    <!-- Top Bar Start -->
+    <div class="topbar">
+        <!-- Navbar -->
+        <nav class="navbar-custom">
+            <ul class="list-unstyled topbar-nav float-right mb-0">
+
+
+          
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
+                       aria-haspopup="false" aria-expanded="false">
+                        <img src="~/Public/assets/images/smallgold.png" alt="profile-user" class="rounded-circle" />
+                        <span class="ml-1 nav-user-name hidden-sm">Tənzimləmə <i class="mdi mdi-chevron-down"></i> </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+
+                        <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Şifrəni dəyiş</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Çıxış</a>
+                    </div>
+                </li>
+
+            </ul><!--end topbar-nav-->
+
+            <ul class="list-unstyled topbar-nav mb-0">
+                <li>
+                    <span class="responsive-logo">
+                        <img src="~/Public/crmassets/images/logo-sm.png" alt="logo-small" class="logo-sm align-self-center" height="34">
+                    </span>
+                </li>
+                <li>
+                    <button class="button-menu-mobile nav-link waves-effect waves-light">
+                        <i class="dripicons-menu nav-icon"></i>
+                    </button>
+                </li>
+
+
+            </ul>
+        </nav>
+        <!-- end navbar-->
+    </div>
+    <!-- Top Bar End -->
+
+    <div class="page-wrapper">
+
+        <!-- Page Content-->
+        <div class="page-content-tab">
+
+            <div class="container-fluid">
+                @RenderBody()
+
+            </div><!-- container -->
+            <!--  Modal content for the above example -->
+
+
+            <footer class="footer text-center text-sm-left">
+                &copy; 2019 - 2020 Metrica <span class="text-muted d-none d-sm-inline-block float-right">Crafted with <i class="mdi mdi-heart text-danger"></i> by Mannatthemes</span>
+            </footer><!--end footer-->
+        </div>
+        <!-- end page content -->
+    </div>
+    <!-- end page-wrapper -->
+    <!-- jQuery  -->
+    <script src="~/Public/crmassets/js/jquery.min.js"></script>
+    <script src="~/Public/crmassets/js/jquery-ui.min.js"></script>
+    <script src="~/Public/crmassets/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Public/crmassets/js/metismenu.min.js"></script>
+    <script src="~/Public/crmassets/js/waves.js"></script>
+    <script src="~/Public/crmassets/js/feather.min.js"></script>
+    <script src="~/Public/crmassets/js/jquery.slimscroll.min.js"></script>
+
+
+    <script src="~/Public/crmassets/pages/jquery.crm_dashboard.init.js"></script>
+
+    <!-- App js -->
+    <script src="~/Public/crmassets/js/app.js"></script>
+
+    <!--Datatables-->
+    <script src="~/Public/crmassets/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/Public/crmassets/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <script src="~/Public/crmassets/datatables/dataTables.responsive.min.js"></script>
+    <script src="~/Public/crmassets/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="~/Public/crmassets/pages/jquery.datatable.init.js"></script>
+
+    <script>
+
+        $(function () {
+            $("#registerButton").click(function () {
+                var password = $("#txtPassword").val();
+                var confirmPassword = $("#txtConfirmPassword").val();
+                if (password != confirmPassword) {
+                    alert("Şifrələr uyğun deyil!");
+                    return false;
+                }
+                return true;
+            });
+        });
+    </script>
+    <script>
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////////
+            $("#CategorySelect").change(function () {
+
+                var CategoryId = $("#CategorySelect").val();
+                let url = $(this).attr("data-url");
+                var firstArea = $(".first-area");
+                firstArea.empty();
+                var secondArea = $(".second-area");
+                secondArea.empty();
+                        $.ajax({
+                        url: url,
+                        type: 'GET',  // http method
+                        data: { CategoryId },  // data to submit
+                            success: function (data) {
+
+                          //  console.log(data);
+                                if (data.length > 0 && data != '404') {
+                                    firstArea.empty();
+                            //    console.log("ok");
+                                firstArea.append(`
+                                                          <div class="col-md-12 ">
+
+                                                            <div class="form-group">
+                                                                <label class="info-title" for="exampleInputName">Tipi seçin </label>
+                                                                <select id="SubCategorySelect" class="form-control unicase-form-control text-input" name="SubCategoryId"  data-url="@Url.Action("getSubSubcategories","list",new { Area=""})" required>
+                                                                    <option  value="">--seçin</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+
+`);
+
+                                $.each(data, function (i, item) {
+                                    $('#SubCategorySelect').append($('<option>', {
+                                        value: item.SubCategoryId,
+                                        text: item.Name
+                                    }));
+                                });
+
+
+                                $(document).on('change', '#SubCategorySelect', function () {
+                                    var SubCategoryId = $("#SubCategorySelect").val();
+                                    let url = $(this).attr("data-url");
+                                    console.log(SubCategoryId);
+
+
+                                    $.ajax({
+                                        url: url,
+                                        type: 'GET',  // http method
+                                        data: { SubCategoryId },  // data to submit
+                                        success: function (data2) {
+                                            secondArea.empty();
+                                            if (data2.length > 0 && data2 != '404') {
+                                                //    console.log("ok");
+                                                secondArea.empty();
+                                                secondArea.append(`
+                                                          <div class="col-md-12 ">
+
+                                                            <div class="form-group">
+                                                                <label class="info-title" for="exampleInputName">Qaş tipini seçin </label>
+                                                                <select id="SubSubCategorySelect" class="form-control unicase-form-control text-input" name="SubSubCategoryId" required >
+                                                                    <option  value="">--seçin</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+
+`);
+                                                $.each(data2, function (i, item) {
+                                                    $('#SubSubCategorySelect').append($('<option>', {
+                                                        value: item.SubSubCategoryId,
+                                                        text: item.Name
+                                                    }));
+                                                });
+                                            }
+                                        }
+                                    });
+
+                                })
+
+                            }
+
+
+                        }
+                    });
+
+
+            });
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+            /////          Filter
+            //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+               $("#CategorySelectFilter").change(function () {
+
+                var CategoryId = $("#CategorySelectFilter").val();
+                let url = $(this).attr("data-url");
+                   var firstArea = $(".first-area-filter");
+                firstArea.empty();
+                   var secondArea = $(".second-area-filter");
+                secondArea.empty();
+                        $.ajax({
+                        url: url,
+                        type: 'GET',  // http method
+                        data: { CategoryId },  // data to submit
+                        success: function (data) {
+                          //  console.log(data);
+                            if (data.length > 0 && data != '404') {
+                            //    console.log("ok");
+                                firstArea.append(`
+                                                          <div class="col-md-12 ">
+
+                                                            <div class="form-group">
+                                                                <label class="info-title" for="exampleInputName">Tipi seçin </label>
+                                                                <select id="SubCategorySelectFilter" class="form-control unicase-form-control text-input w-100" name="SubCategoryId"  data-url="@Url.Action("getSubSubcategories","list",new { Area=""})" >
+                                                                    <option  value="">--seçin</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+
+`);
+
+                                $.each(data, function (i, item) {
+                                    $('#SubCategorySelectFilter').append($('<option>', {
+                                        value: item.SubCategoryId,
+                                        text: item.Name
+                                    }));
+                                });
+
+
+                                $(document).on('change', '#SubCategorySelectFilter', function () {
+                                    var SubCategoryId = $("#SubCategorySelectFilter").val();
+                                    let url = $(this).attr("data-url");
+                                    console.log(SubCategoryId);
+
+
+                                    $.ajax({
+                                        url: url,
+                                        type: 'GET',  // http method
+                                        data: { SubCategoryId },  // data to submit
+                                        success: function (data2) {
+                                            secondArea.empty();
+                                            if (data2.length > 0 && data2 != '404') {
+                                                //    console.log("ok");
+                                                secondArea.empty();
+                                                secondArea.append(`
+                                                          <div class="col-md-12 ">
+
+                                                            <div class="form-group">
+                                                                <label class="info-title" for="exampleInputName">Qaş tipini seçin </label>
+                                                                <select id="SubSubCategorySelectFilter" class="form-control unicase-form-control text-input w-100" name="SubSubCategoryId"  >
+                                                                    <option  value="">--seçin</option>
+                                                                </select>
+                                                            </div>
+
+                                                        </div>
+
+`);
+                                                $.each(data2, function (i, item) {
+                                                    $('#SubSubCategorySelectFilter').append($('<option>', {
+                                                        value: item.SubSubCategoryId,
+                                                        text: item.Name
+                                                    }));
+                                                });
+                                            }
+                                        }
+                                    });
+
+                                })
+
+                            }
+
+
+                        }
+                    });
+
+
+            });
+
+            /////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+        var inputs = document.querySelectorAll('.file-input')
+
+        for (var i = 0, len = inputs.length; i < len; i++) {
+            customInput(inputs[i])
+        }
+
+        function customInput(el) {
+            const fileInput = el.querySelector('[type="file"]')
+            const label = el.querySelector('[data-js-label]')
+
+            fileInput.onchange =
+                fileInput.onmouseout = function () {
+                    if (!fileInput.value) return
+
+                    var value = fileInput.value.replace(/^.*[\\\/]/, '')
+                    el.className += ' -chosen'
+                    // label.innerText = value
+                }
+        }
+        /////////////////////////////////////////////////////////////
+
+        function previewImages() {
+
+            var $preview = $('#preview').empty();
+            if (this.files) $.each(this.files, readAndPreview);
+
+            function readAndPreview(i, file) {
+
+                if (!/\.(jpe?g|png|gif)$/i.test(file.name)) {
+                    return alert(file.name + " is not an image");
+                } // else...
+
+                var reader = new FileReader();
+
+                $(reader).on("load", function () {
+                    $preview.append($("<img/>", { src: this.result, width: 200 }));
+                });
+
+                reader.readAsDataURL(file);
+
+            }
+
+        }
+
+        $('#theinput').on("change", previewImages);
+
+    </script>
+
+
+    <!--Datatables-->
+
+</body>
+
+</html>

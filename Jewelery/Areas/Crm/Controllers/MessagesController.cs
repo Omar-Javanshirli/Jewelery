@@ -8,20 +8,27 @@ namespace Jewelery.Areas.Crm.Controllers
     public class MessagesController : Controller
     {
         JeweleryEntities db = new JeweleryEntities();
+        private readonly JeweleryEntities.JeweleryDbContext _context;
+
+        public MessagesController(JeweleryEntities.JeweleryDbContext context)
+        {
+            _context = context;
+        }
+
         // GET: Crm/Messages
         public ActionResult Index()
         {
-            List<Message> read = db.Messages.Where(w => w.IsReaden == false).ToList();
+            List<Message> read = _context.Messages.Where(w => w.IsReaden == false).ToList();
             read.ForEach(f => f.IsReaden = true);
             db.SaveChanges();
-            List<Message> messages = db.Messages.Where(w=>w.Status == true).OrderBy(o => o.Id).ToList();
+            List<Message> messages = _context.Messages.Where(w=>w.Status == true).OrderBy(o => o.Id).ToList();
             return View(messages);
         }
 
         public ActionResult Delete(int id)
         {
-            Message message = db.Messages.FirstOrDefault(f => f.Id == id);
-            db.Messages.Remove(message);
+            Message message = _context.Messages.FirstOrDefault(f => f.Id == id);
+            _context.Messages.Remove(message);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

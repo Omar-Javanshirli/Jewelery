@@ -47,6 +47,10 @@
               "target": "Package",
               "version": "[3.5.0.2, )"
             },
+            "BuildBundlerMinifier": {
+              "target": "Package",
+              "version": "[3.2.449, )"
+            },
             "Microsoft.AspNet.Razor": {
               "target": "Package",
               "version": "[3.3.0, )"
@@ -90,6 +94,10 @@
             "Modernizr": {
               "target": "Package",
               "version": "[2.8.3, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
             },
             "WebGrease": {
               "target": "Package",

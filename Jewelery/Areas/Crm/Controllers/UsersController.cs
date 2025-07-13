@@ -9,16 +9,23 @@ namespace Jewelery.Areas.Crm.Controllers
     public class UsersController : Controller
     {
         JeweleryEntities db = new JeweleryEntities();
+        private readonly JeweleryEntities.JeweleryDbContext  _context;
+
+        public UsersController(JeweleryEntities.JeweleryDbContext context)
+        {
+            _context = context;
+        }
+
         // GET: Crm/Users
         public ActionResult Index()
         {
-            List<User> users = db.Users.Where(w => w.Status == true).ToList();
+            List<User> users = _context.Users.Where(w => w.Status == true).ToList();
 
             return View(users);
         }
         public ActionResult Delete(int id)
         {
-            User user = db.Users.FirstOrDefault(f => f.Id == id);
+            User user = _context.Users.FirstOrDefault(f => f.Id == id);
             user.Status = false;
             db.SaveChanges();
             return RedirectToAction("Index");
@@ -26,7 +33,7 @@ namespace Jewelery.Areas.Crm.Controllers
 
         public ActionResult Change(int id , string Password)
         {
-            User user = db.Users.FirstOrDefault(f => f.Id == id);
+            User user = _context.Users.FirstOrDefault(f => f.Id == id);
             if (user != null)
             {
                 user.Password = Crypto.HashPassword(Password);
