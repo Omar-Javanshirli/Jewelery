@@ -311,3 +311,5 @@
 /Users/cavansirliomer/Desktop/Jewelery/Jewelery/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/cavansirliomer/Desktop/Jewelery/Jewelery/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
 /Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.MvcApplicationPartsAssemblyInfo.cs
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/bin/Debug/net8.0/Npgsql.dll
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll

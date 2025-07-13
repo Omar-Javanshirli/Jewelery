@@ -12,13 +12,16 @@ builder.Services.AddControllersWithViews(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+
 builder.Services.AddDbContext<JeweleryEntities.JeweleryDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("JeweleryConnection"));
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("JeweleryConnection"));
 });
 
-var app = builder.Build();
 
+var app = builder.Build();
 
 
 // Configure the HTTP request pipeline.
