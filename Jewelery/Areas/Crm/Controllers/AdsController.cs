@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Jewelery.Areas.Crm.Controllers
 {
-    [AuthLogin]
+    [AuthLoginCustom]
     public class AdsController : Controller
     {
         JeweleryEntities db = new JeweleryEntities();

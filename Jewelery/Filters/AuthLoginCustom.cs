@@ -3,13 +3,13 @@ using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Jewelery.Filters
 {
-    public class AuthLogin(IHttpContextAccessor httpContextAccessor) : ActionFilterAttribute
+    public class AuthLoginCustom : ActionFilterAttribute
     {
-        private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
-
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (_httpContextAccessor.HttpContext.Current.Session["Admin"] == null)
+            //Todo Program.cs filana cixmalidir.
+            var context = new HttpContextAccessor();
+            if (context.HttpContext?.Session.GetString("Admin") == null)
             {
                 filterContext.Result = new RedirectToRouteResult(
             new RouteValueDictionary
@@ -23,7 +23,5 @@ namespace Jewelery.Filters
             
             base.OnActionExecuting(filterContext);
         }
-
-
     }
 }

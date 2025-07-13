@@ -1,0 +1,12 @@
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.csproj.AssemblyReference.cache
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.Resources.Resource.resources
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.Resources.Resource.ru.resources
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.csproj.GenerateResource.cache
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.AssemblyInfoInputs.cache
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.AssemblyInfo.cs
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.csproj.CoreCompileInputs.cache
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.MvcApplicationPartsAssemblyInfo.cache
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.RazorAssemblyInfo.cache
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.RazorAssemblyInfo.cs
+/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/Debug/net8.0/Jewelery.sourcelink.json

@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Jewelery.Filters;
+﻿using Jewelery.Filters;
 using Jewelery.Models;
+using Microsoft.AspNetCore.Mvc;
+
 namespace Jewelery.Areas.Crm.Controllers
 {
-    [AuthLogin]
+    [AuthLoginCustom]
     public class MessagesController : Controller
     {
         JeweleryEntities db = new JeweleryEntities();

@@ -1,26 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Jewelery.Areas.Crm.Data;
+﻿using Jewelery.Areas.Crm.Data;
 using Jewelery.Filters;
 using Jewelery.Models;
+using Microsoft.AspNetCore.Mvc;
+
 namespace Jewelery.Areas.Crm.Controllers
 {
-    [AuthLogin]
-    public class DashboardController : Controller
+    [AuthLoginCustom]
+    public class DashboardController(IWebHostEnvironment env) : Controller
     {
+        private readonly IWebHostEnvironment env = env;
         JeweleryEntities db = new JeweleryEntities();
+
         // GET: Crm/Dashboard
         public ActionResult Index()
         {
             DashboardVM data = new DashboardVM();
-            data.Ads = db.Ads.Where(w => w.Status == 2).OrderByDescending(o=>o.PublishDate).ToList();
+            data.Ads = db.Ads.Where(w => w.Status == 2).OrderByDescending(o => o.PublishDate).ToList();
             data.TotalAds = db.Ads.Count();
-            data.ActiveAds = db.Ads.Where(w=>w.Status == 1).Count();
+            data.ActiveAds = db.Ads.Where(w => w.Status == 1).Count();
             data.WaitingAds = db.Ads.Where(w => w.Status == 2).Count();
-            data.NewMessages = db.Messages.Where(w=>w.IsReaden == false).Count();
+            data.NewMessages = db.Messages.Where(w => w.IsReaden == false).Count();
             data.TotalUsers = db.Users.Count();
             return View(data);
         }
@@ -28,21 +27,25 @@ namespace Jewelery.Areas.Crm.Controllers
         public ActionResult Edit(int id)
         {
             AdminEdit data = new AdminEdit();
-            data.Ad = db.Ads.FirstOrDefault(f => f.Id == id && f.Status != 3 );
+            data.Ad = db.Ads.FirstOrDefault(f => f.Id == id && f.Status != 3);
             if (data.Ad != null)
             {
                 data.menuItems = db.MenuItemLanguages.Where(w => w.MenuItem.Status == true && w.LangId == 1).ToList();
-                data.menuCategories = db.CategoryLanguages.Where(w => w.Category.Status == true && w.LangId == 1).ToList();
-                data.subCategories = db.SubCategoryLanguages.Where(w => w.SubCategory.Status == true && w.LangId == 1).ToList();
-                data.subSubCategories = db.SubSubCategoryLanguages.Where(w => w.SubSubCategory.Status == true && w.LangId == 1).ToList();
-        
+                data.menuCategories =
+                    db.CategoryLanguages.Where(w => w.Category.Status == true && w.LangId == 1).ToList();
+                data.subCategories = db.SubCategoryLanguages.Where(w => w.SubCategory.Status == true && w.LangId == 1)
+                    .ToList();
+                data.subSubCategories = db.SubSubCategoryLanguages
+                    .Where(w => w.SubSubCategory.Status == true && w.LangId == 1).ToList();
+
                 return View(data);
             }
+
             return RedirectToAction("Index");
-       
         }
 
-        public ActionResult Update(int id, Ad ad, List<HttpPostedFileBase> Images)
+        //TODO IFromFile ucun islemeye biler
+        public ActionResult Update(int id, Ad ad, List<IFormFile> Images)
         {
             Ad old = db.Ads.FirstOrDefault(f => f.Id == id);
             if (old != null)
@@ -63,12 +66,12 @@ namespace Jewelery.Areas.Crm.Controllers
                     decimal oldPrice = old.Price;
                     old.Price = ad.Price;
                     old.OldPrice = oldPrice;
-
                 }
                 else
                 {
                     old.Price = ad.Price;
                 }
+
                 old.Weight = ad.Weight;
 
                 ad.PublishDate = DateTime.UtcNow.AddHours(4);
@@ -97,26 +100,30 @@ namespace Jewelery.Areas.Crm.Controllers
                             {
                                 adImage.IsMain = false;
                             }
+
                             db.AdImages.Add(adImage);
 
 
                             count++;
                         }
                     }
+
                     db.SaveChanges();
                 }
             }
-            return RedirectToAction("edit", "dashboard", new { Area = "crm" , id =id });
+
+            return RedirectToAction("edit", "dashboard", new { Area = "crm", id = id });
         }
 
         public ActionResult ImageDelete(int id)
         {
-            AdImage image = db.AdImages.FirstOrDefault(f => f.Id == id );
+            AdImage image = db.AdImages.FirstOrDefault(f => f.Id == id);
             if (image != null)
             {
                 db.AdImages.Remove(image);
                 db.SaveChanges();
             }
+
             return Redirect(Request.UrlReferrer.ToString());
         }
 
@@ -128,7 +135,8 @@ namespace Jewelery.Areas.Crm.Controllers
                 ad.Status = 1;
                 db.SaveChanges();
             }
-            return RedirectToAction("index","dashboard",new { Area="crm"});
+
+            return RedirectToAction("index", "dashboard", new { Area = "crm" });
         }
 
         public ActionResult Deny(int id)
@@ -139,6 +147,7 @@ namespace Jewelery.Areas.Crm.Controllers
                 ad.Status = 3;
                 db.SaveChanges();
             }
+
             return RedirectToAction("index", "dashboard", new { Area = "crm" });
         }
     }

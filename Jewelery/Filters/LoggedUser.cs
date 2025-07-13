@@ -1,16 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 
 namespace Jewelery.Filters
 {
-    public class LoggedUser : ActionFilterAttribute
+    //TODO clasin cagrildigi yeri bilmirik
+    public class LoggedUser(IHttpContextAccessor httpContextAccessor) : ActionFilterAttribute
     {
         public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
-            if (HttpContext.Current.Session["LoggedUser"] == null)
+            if (httpContextAccessor.HttpContext?.Session.GetString("LoggedUser") == null)
             {
                 filterContext.Result = new RedirectResult("~");
                 return;

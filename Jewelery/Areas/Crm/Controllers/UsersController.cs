@@ -1,15 +1,11 @@
 ﻿using Jewelery.Filters;
 using Jewelery.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Helpers;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Jewelery.Areas.Crm.Controllers
 {
-    [AuthLogin]
+    [AuthLoginCustom]
     public class UsersController : Controller
     {
         JeweleryEntities db = new JeweleryEntities();

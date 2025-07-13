@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Helpers;
-using System.Web.Mvc;
-using Jewelery.Models;
+﻿using Jewelery.Models;
+using Microsoft.AspNetCore.Mvc;
+
 namespace Jewelery.Areas.Crm.Controllers
 {
     public class LoginCrmController : Controller
