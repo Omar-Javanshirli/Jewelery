@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Jewelery.csproj": {}
+    "/Users/raheddin/RiderProjects/Jewelery/Jewelery/Jewelery.csproj": {}
   },
   "projects": {
-    "/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Jewelery.csproj": {
+    "/Users/raheddin/RiderProjects/Jewelery/Jewelery/Jewelery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Jewelery.csproj",
+        "projectUniqueName": "/Users/raheddin/RiderProjects/Jewelery/Jewelery/Jewelery.csproj",
         "projectName": "Jewelery",
-        "projectPath": "/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Jewelery.csproj",
-        "packagesPath": "/Users/cavansirliomer/.nuget/packages/",
-        "outputPath": "/Users/cavansirliomer/Desktop/Jewelery/Jewelery/obj/",
+        "projectPath": "/Users/raheddin/RiderProjects/Jewelery/Jewelery/Jewelery.csproj",
+        "packagesPath": "/Users/raheddin/.nuget/packages/",
+        "outputPath": "/Users/raheddin/RiderProjects/Jewelery/Jewelery/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/cavansirliomer/.nuget/NuGet/NuGet.Config"
+          "/Users/raheddin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -36,8 +36,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -119,6 +120,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.osx-arm64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -127,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/raheddin/.dotnet/sdk/9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -9,75 +9,67 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Jewelery
 build_property.RootNamespace = Jewelery
-build_property.ProjectDir = /Users/cavansirliomer/Desktop/Jewelery/Jewelery/
+build_property.ProjectDir = /Users/raheddin/RiderProjects/Jewelery/Jewelery/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/cavansirliomer/Desktop/Jewelery/Jewelery
+build_property.MSBuildProjectDirectory = /Users/raheddin/RiderProjects/Jewelery/Jewelery
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Ads/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0Fkcy9JbmRleC5jc2h0bWw=
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/Ads/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Categories/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0NhdGVnb3JpZXMvQ3JlYXRlLmNzaHRtbA==
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Categories/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0NhdGVnb3JpZXMvSW5kZXguY3NodG1s
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Dashboard/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0Rhc2hib2FyZC9FZGl0LmNzaHRtbA==
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/Dashboard/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Dashboard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0Rhc2hib2FyZC9JbmRleC5jc2h0bWw=
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGFzaGJvYXJkL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/LoginCrm/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL0xvZ2luQ3JtL0luZGV4LmNzaHRtbA==
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/LoginCrm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW5Dcm0vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Messages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL01lc3NhZ2VzL0luZGV4LmNzaHRtbA==
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/Messages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVzc2FnZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL1NoYXJlZC9fTGF5b3V0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Areas/Crm/Views/Users/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXMvQ3JtL1ZpZXdzL1VzZXJzL0luZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/cavansirliomer/Desktop/Jewelery/Jewelery/Views/Shared/_Layout.cshtml]
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-f3n50gelmq
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/raheddin/RiderProjects/Jewelery/Jewelery/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = 
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+build_metadata.AdditionalFiles.CssScope = 

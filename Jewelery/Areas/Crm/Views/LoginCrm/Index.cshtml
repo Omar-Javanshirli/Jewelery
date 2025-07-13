@@ -1,0 +1,70 @@
+﻿@model Jewelery.Models.Login
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeMakker">
+    <title>Login</title>
+    <link rel="stylesheet" href="~/Areas/Crm/Public/vendor/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="~/Areas/Crm/Public/vendor/fontawesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="~/Areas/Crm/Public/css/main.css">
+</head>
+
+<body class="theme-indigo">
+    <!-- Page Loader -->
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="m-t-30"><img src="~/Areas/Manage/Public/images/brand/icon_black.svg" width="48" height="48" alt="ArrOw"></div>
+            <p>Zəhmət olmasa gözləyin...</p>
+        </div>
+    </div>
+    <!-- WRAPPER -->
+    <div id="wrapper">
+        <div class="vertical-align-wrap">
+            <div class="vertical-align-middle auth-main">
+                <div class="auth-box">
+                    <div class="logo text-center">
+                        <h1><a style="color: #2e375f">GOLD.AZ</a></h1>
+                    </div>
+                    <div class="card">
+                        <div class="header">
+                            <p class="lead">Hesabınıza daxil olun</p>
+                        </div>
+                        <div class="body">
+                            <form method="post" class="form-auth-small">
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Email, new { @class = "control-label" })
+                                    @Html.TextBoxFor(m => m.Email, null, new { @class = "form-control", @type = "email", @placeholder = "E-poçt" })
+                                    @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="form-group">
+                                    @Html.LabelFor(m => m.Password, new { @class = "control-label" })
+                                    @Html.TextBoxFor(m => m.Password, null, new { @class = "form-control", @type = "password", @placeholder = "Şifrə" })
+                                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                                </div>
+                        
+                                @Html.ValidationSummary()
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">GİRİŞ</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END WRAPPER -->
+    <!-- Core -->
+    <script src="~/Areas/Crm/Public/bundles/libscripts.bundle.js"></script>
+    <script src="~/Areas/Crm/Public/bundles/vendorscripts.bundle.js"></script>
+
+    <script src="~/Areas/Crm/Public/js/theme.js"></script>
+</body>
+
+</html>
